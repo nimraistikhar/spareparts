@@ -10,34 +10,33 @@ import Image5 from '../img/p1evc3va20bghq8h1mpr1kmd119f4-6.jpg'
 import Image6 from '../img/p1evc3va20bghq8h1mpr1kmd119f4-7.jpg'
 import Image7 from '../img/p1evc3va20bghq8h1mpr1kmd119f4-8.jpg'
 import Image8 from '../img/p1evc3va20bghq8h1mpr1kmd119f4-9.jpg'
-// import Image9 from '../img/p1evc3va20bghq8h1mpr1kmd119f4-10.jpg'
-// import Image10 from '../img/p1evc3va20bghq8h1mpr1kmd119f4-11.jpg'
-// import Image11 from '../img/p1evc3va20bghq8h1mpr1kmd119f4-12.jpg'
-// import Image12 from '../img/p1evc3va20bghq8h1mpr1kmd119f4-13.jpg'
 
 const HomeStyle = styled.div`
     .home {
         color: #4d4d4d;
-        width: 90%;
-        margin: 0 9rem;
-        margin-top: 3rem;
+        width: 72%;
+        margin: 0 auto;
+        padding-top: 1.5rem;
         height: 150vh;
         display: flex;
         flex-direction: column;
         justify-content: start;
+        @media (max-width: 1300px) {
+            width: 75%;
+        }
         @media (max-width: 1199px) {
             width: 95%;
             margin: 0 7rem;
-            margin-top: 3rem;
+            margin-top: .5rem;
         }
         @media (max-width: 1063px) {
             width: 100%;
             margin: 0 5rem;
-            margin-top: 3rem;
+            margin-top: .3rem;
         }
         @media (max-width: 991px) {
             margin: 0 4rem;
-            margin-top: 2rem;
+            /* margin-top: 2rem; */
         }
         @media (max-width: 874px) {
             margin: 0 2.5rem;
@@ -52,12 +51,15 @@ const HomeStyle = styled.div`
         @media (max-width: 400px) {
             margin: 0 1rem;
         }
+        @media (max-width: 375px) {
+            margin: 0;
+        }
         @media (max-width: 328px) {
             margin: 0;
         }
         h3 {
             color: #4d4d4d;
-            font-size: 3.7rem;
+            font-size: 3.5rem;
             font-weight: 500;
             font-family: 'Oswald', sans-serif;
             @media (max-width: 991px) {
@@ -133,8 +135,20 @@ const HomeStyle = styled.div`
                         display: flex;
                         width: 100%;
                         height: 25vh;
-                        @media (max-width: 874px) {
+                        @media (max-width: 1278px) {
+                            height: 23vh;
+                        }
+                        @media (max-weight: 1080px) {
+                            height: 20vh;
+                        }
+                        @media (max-width: 904px) {
+                            height: 19vh;
+                        }
+                        @media (max-width: 786px) {
                             height: 22vh;
+                        }
+                        @media (max-width: 718px) {
+                            height: 20vh;
                         }
                         @media (max-width: 600px) {
                             width: 100%;
@@ -159,13 +173,25 @@ const HomeStyle = styled.div`
                                position: relative;
                                 img {
                                     object-fit: contain;
-                                    height: 19vh;
+                                    height: 20vh;
                                     width: 13vw;
+                                    @media (max-width: 1278px) {
+                                        height: 18vh;
+                                    }
+                                    @media (max-width: 1080px) {
+                                        height: 17vh;
+                                    }
                                     @media (max-width: 991px) {
                                         height: 15vh;
                                     }
                                     @media (max-width: 874px) {
                                         height: 13vh;
+                                    }
+                                    @media (max-width: 786px) {
+                                        height: 17vh;
+                                    }
+                                    @media (max-width: 718px) {
+                                        height: 16vh;
                                     }
                                     @media (max-width: 600px) {
                                         height: 21vh;
@@ -175,17 +201,9 @@ const HomeStyle = styled.div`
                                     @media (max-width: 416px) {
                                         height: 18vh;
                                     }
-                                    @media (max-width: 350px) {
-                                        height: 20vh;
-                                        width: 30vw;
-                                    }
-                                    @media (max-width: 302px) {
-                                        height: 19vh;
-                                        width: 28vw;
-                                    }
-                                    @media (max-width: 290px) {
-                                        height: 15vh;
-                                        width: 25vw;
+                                    @media (max-width: 375px) {
+                                        height: 17vh;
+                                        width: 40vw;
                                     }
                                     .image {
                                         opacity: 1;
@@ -197,18 +215,31 @@ const HomeStyle = styled.div`
                                     }
                                 }
                                 h6 {
-                                    font-size: .7rem;
+                                    font-size: .8rem;
                                     font-weight: 700;
                                     padding-left: 1rem;
+                                    @media (max-width: 637px) {
+                                        font-size: .7rem;
+                                    }
                                     @media (max-width: 600px) {
-                                        font-size: .8rem;
-                                        font-weight: 800;
+                                        font-size: 1.4rem;
+                                        font-weight: 500;
+                                        padding-left: .5rem;
+                                        letter-spacing: .2px;
+                                        font-family: 'Oswald', sans-serif;
+                                    }
+                                    @media (max-width: 369) {
+                                        padding-left: 0;
+                                    }
+                                    @media (max-width: 329px) {
+                                        font-size: 1rem;
                                     }
                                     @media (max-width: 290px) {
                                         font-weight: 500;
                                     }
                                     @media (max-width: 266px) {
-                                        font-size: .55rem;
+                                        font-size: .9rem;
+                                        padding-left: .6rem;
                                     }
                                  }
                                 .middle {

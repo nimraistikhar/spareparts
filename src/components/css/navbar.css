@@ -42,8 +42,8 @@
     .nav .menu {
         z-index: 100;
         position: absolute;
-        top: 3%;
-        left: 2%;
+        top: 1.5%;
+        left: 3%;
     }
     .nav .close {
         font-size: 2.5rem;
